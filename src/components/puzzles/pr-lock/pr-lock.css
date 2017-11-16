@@ -22,10 +22,12 @@ button.keypad-button:active {
   outline: 0;
 }
 
-.handle-panel {
+.panel {
   background-image: url("./assets/panel.svg");
   height: 448px;
   width: 164px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .handle {

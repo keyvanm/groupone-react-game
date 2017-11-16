@@ -32,7 +32,7 @@ class Panel extends Component {
   render () {
     const indState = this.state.indState;
     return (
-      <div className="handle-panel">
+      <div className="panel">
         <Indicator state={indState}/>
         <Keypad onKeyPress={this.onKeyPress}/>
         <Handle disabled={indState !== "green"} />
