@@ -25,7 +25,7 @@ const Indicator = ({state}) => {
 
   return (
     <div className="indicator">
-      <img src={indicatorSrc} />
+      <img alt={`indicator-${state}`} src={indicatorSrc} />
     </div>
   );
 }
