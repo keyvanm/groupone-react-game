@@ -19,10 +19,10 @@ class Panel extends Component {
     if (entry.length === 5) {
       if (entry === "1030#"){
         this.setState({ entry: "", indState: "green" });
-        setTimeout(function () { this.setState({ indState: "off" }); }.bind(this), 3000);
+        setTimeout(function () { this.setState({ indState: "off" }); }.bind(this), 4000);
       } else {
         this.setState({ entry: "", indState: "red" });
-        setTimeout(function () { this.setState({ indState: "off" }); }.bind(this), 3000);
+        setTimeout(function () { this.setState({ indState: "off" }); }.bind(this), 4000);
       }
     } else if (entry.length < 5) {
       this.setState({ entry });
