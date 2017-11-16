@@ -6,6 +6,7 @@
   border-radius: 6px;
   background-color: #1d1d1d;
   border: solid 1px rgba(255, 255, 255, 0.44);
+  margin: 2px;
 }
 
 button.keypad-button:active {
@@ -26,10 +27,13 @@ button.keypad-button:active {
   width: 164px;
 }
 
-.handle-handle {
+.handle {
   background-image: url("./assets/handle.svg");
   height: 51px;
   width: 231px;
+  position: relative;
+  top: 120px;
+  right: 125px;
 }
 
 .indicator {
@@ -40,7 +44,7 @@ button.keypad-button:active {
 
 .keypad {
     padding-top: 15px;
-    width: 83%;
+    width: 87px;
     margin-left: auto;
     margin-right: auto;
 }

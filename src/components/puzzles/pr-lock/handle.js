@@ -5,7 +5,7 @@ import './pr-lock.css';
 
 const Handle = (props) => {
   return (
-    <div className="handle-handle">
+    <div className="handle">
     </div>
   );
 }
