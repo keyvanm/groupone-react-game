@@ -1,10 +1,13 @@
 import React from 'react';
+import { Row, Col } from 'reactstrap';
 
 import KeypadButton from './button';
 
+import './pr-lock.css';
+
 const Keypad = ({value}) => {
   return (
-    <div>
+    <div className="keypad">
       <Row>
         <Col><KeypadButton value="1" /></Col>
         <Col><KeypadButton value="2" /></Col>
@@ -28,3 +31,5 @@ const Keypad = ({value}) => {
     </div>
   )
 }
+
+export default Keypad;

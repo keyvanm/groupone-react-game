@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 
-import DoorHandlePuzzle from './components/puzzles/door-handle';
+import ProjectRoomLockPuzzle from './components/puzzles/pr-lock/pr-lock';
 
 
 class App extends Component {
   render() {
     return (
       <Container>
-        <DoorHandlePuzzle />
+        <ProjectRoomLockPuzzle />
       </Container>
     );
   }
