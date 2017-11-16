@@ -3,6 +3,10 @@ import { Row, Col } from 'reactstrap';
 import { Button } from 'reactstrap';
 import { Badge } from 'reactstrap';
 
+import './door-handle.css';
+
+import HandleBaseImg from '../../puzzle-assets/door-handle/panel.svg';
+import IndicatorOffImg from '../../puzzle-assets/door-handle/indicator-off.svg';
 
 var SchilageIndicator = ({indicator}) => {
   var color;
@@ -50,36 +54,41 @@ export default class DoorHandlePuzzle extends Component {
 
   render () {
     return (
-        <Row>
-          <Col md="12">
-            <Row className="justify-content-md-center">
-              <Col md="2" className="text-center">
+        <Row className="justify-content-md-center">
+          <Col style={{ backgroundColor: 'white' }} md="6">
+            <div className="handle-panel">
+
+            </div>
+
+
+            <Row>
+              <Col className="text-center">
                 <SchilageIndicator indicator={this.state.indicator}/>
               </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="2">
+            <Row>
+              <Col>
                 <Button onClick={this.handleNumClick} value="1" size="lg">1</Button>
                 <Button onClick={this.handleNumClick} value="2" size="lg">2</Button>
                 <Button onClick={this.handleNumClick} value="3" size="lg">3</Button>
               </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="2">
+            <Row>
+              <Col>
                 <Button onClick={this.handleNumClick} value="4" size="lg">4</Button>
                 <Button onClick={this.handleNumClick} value="5" size="lg">5</Button>
                 <Button onClick={this.handleNumClick} value="6" size="lg">6</Button>
               </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="2">
+            <Row>
+              <Col>
                 <Button onClick={this.handleNumClick} value="7" size="lg">7</Button>
                 <Button onClick={this.handleNumClick} value="8" size="lg">8</Button>
                 <Button onClick={this.handleNumClick} value="9" size="lg">9</Button>
               </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="2">
+            <Row>
+              <Col>
                 <Button onClick={this.handleNumClick} value="*" size="lg">*</Button>
                 <Button onClick={this.handleNumClick} value="0" size="lg">0</Button>
                 <Button onClick={this.handleNumClick} value="#" size="lg">#</Button>

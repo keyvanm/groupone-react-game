@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="21" viewBox="0 0 63 21">
+    <defs>
+        <path id="a" d="M8.6 0h47.12a5 5 0 0 1 4.597 6.97l-3.6 8.402a5 5 0 0 1-4.596 3.03H5a5 5 0 0 1-4.596-6.969l3.6-8.402A5 5 0 0 1 8.6 0z"/>
+        <filter id="b" width="118.1%" height="159.8%" x="-9.1%" y="-29.9%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" radius="2" result="shadowSpreadInner1"/>
+            <feGaussianBlur in="shadowSpreadInner1" result="shadowBlurInner1" stdDeviation="3.5"/>
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)">
+            <use fill="#8ADE2E" xlink:href="#a"/>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+            <path stroke="#000" stroke-width="2" d="M8.6 1a4 4 0 0 0-3.677 2.425l-3.6 8.402A4 4 0 0 0 5 17.402h47.12a4 4 0 0 0 3.677-2.424l3.6-8.403A4 4 0 0 0 55.722 1H8.6z"/>
+            <path stroke="#FFF" d="M8.6-.5h47.12a5.5 5.5 0 0 1 5.056 7.666l-3.6 8.402a5.5 5.5 0 0 1-5.055 3.334H5a5.5 5.5 0 0 1-5.055-7.666l3.6-8.402A5.5 5.5 0 0 1 8.6-.5z"/>
+        </g>
+        <path stroke="#FFF" d="M14.261 4.5a3.5 3.5 0 0 0-3.123 1.92l-2.024 4a3.5 3.5 0 0 0 3.123 5.08H47.94a3.5 3.5 0 0 0 3.123-1.92l2.024-4a3.5 3.5 0 0 0-3.123-5.08H14.26z"/>
+        <text fill="#FFF" font-family="KhmerMN-Bold, Khmer MN" font-size="9" font-weight="bold" letter-spacing="-.2" transform="translate(1 1)">
+            <tspan x="11" y="12">SCHLAGE</tspan>
+        </text>
+    </g>
+</svg>
