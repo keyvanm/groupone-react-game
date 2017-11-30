@@ -79,6 +79,9 @@
           } else {
             $(this).addClass("faculty-container-incorrect");
           }
+          if ($('.faculty-container-correct').length === 8) {
+            alert("Done!");
+          }
         },
         out: function(event, ui) {
           $(this).removeClass("faculty-container-correct faculty-container-highlight faculty-container-incorrect")
