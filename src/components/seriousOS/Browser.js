@@ -14,7 +14,7 @@ class Browser extends Component {
 
   render () {
     return (
-      <Draggable defaultPosition={{x: 0, y: -300}}>
+      <Draggable defaultPosition={{x: 150, y: -250}}>
         <div id="app_browser">
           <div id="browser_tool_bar">
             <div className="app_title">

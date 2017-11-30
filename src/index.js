@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import { BrowserRouter } from 'react-router-dom';
-import { Container } from 'reactstrap';
 
 
 import './index.css';
@@ -13,9 +12,7 @@ import './index.css';
 
 ReactDOM.render((
   <BrowserRouter>
-    <Container>
-      <App />
-    </Container>
+    <App />
   </BrowserRouter>
 ),
   document.getElementById('root')

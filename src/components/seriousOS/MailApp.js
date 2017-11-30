@@ -7,7 +7,7 @@ import mailAppUI from '../assets/mail_app.png';
 class MailApp extends Component {
   render () {
     return (
-      <Draggable defaultPosition={{x: 600, y: 500}}>
+      <Draggable defaultPosition={{x: 700, y: 500}}>
         {/* <Row style={{ backgroundColor: "white", position: "absolute", top: "100px", left:"100px" }}>
           <Col md="4">
             <ul>
