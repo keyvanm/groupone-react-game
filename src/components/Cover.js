@@ -2,7 +2,7 @@ import React from 'react';
 
 import multivrsImg from './multivrsImg.jpg';
 
-const Home = () => {
+const Cover = () => {
   return (
     <a href="/pr">
       <img src={multivrsImg} style={{width: "100%"}} />
@@ -10,4 +10,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Cover;

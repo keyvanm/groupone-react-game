@@ -17,7 +17,7 @@ class Panel extends Component {
     var entry = this.state.entry;
     entry += val;
     if (entry.length === 5) {
-      if (entry === "1030#"){
+      if (entry === "1030#" || entry === "1050#") {
         this.setState({ entry: "", indState: "green" });
         setTimeout(function () { this.setState({ indState: "off" }); }.bind(this), 4000);
       } else {

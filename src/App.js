@@ -3,13 +3,13 @@ import { Switch, Route } from 'react-router';
 
 import ProjectRoomLockPuzzle from './components/puzzles/pr-lock/pr-lock';
 
-import Home from './components/Home';
+import Cover from './components/Cover';
 
 class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' component={Cover}/>
         <Route path='/pr' component={ProjectRoomLockPuzzle}/>
       </Switch>
     );
