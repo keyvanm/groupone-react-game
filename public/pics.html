@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Match faculty to pics!</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <style>
-    .faculty-table, .faculty-table td {
+    .faculty-table,
+    .faculty-table td {
       border-style: solid;
     }
 
@@ -34,36 +36,61 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( "#smith-richard" ).draggable({ snap: "#smith-richard-container", snapMode: "inner" });
-    $( "#kopak-jeannette" ).draggable({ snap: "#kopak-jeannette-container", snapMode: "inner" });
-    $( "#fracchia-dave" ).draggable({ snap: "#fracchia-dave-container", snapMode: "inner" });
-    $( "#larry-bafia" ).draggable({ snap: "#larry-bafia-container", snapMode: "inner" });
-    $( "#pennefather-patrick" ).draggable({ snap: "#pennefather-patrick-container", snapMode: "inner" });
-    $( "#festinger-jon" ).draggable({ snap: "#festinger-jon-container", snapMode: "inner" });
-    $( "#al-sinoy" ).draggable({ snap: "#al-sinoy-container", snapMode: "inner" });
-    $( "#jason-elliot" ).draggable({ snap: "#jason-elliot-container", snapMode: "inner" });
+    $(function() {
+      $("#smith-richard").draggable({
+        snap: "#smith-richard-container",
+        snapMode: "inner"
+      });
+      $("#kopak-jeannette").draggable({
+        snap: "#kopak-jeannette-container",
+        snapMode: "inner"
+      });
+      $("#fracchia-dave").draggable({
+        snap: "#fracchia-dave-container",
+        snapMode: "inner"
+      });
+      $("#larry-bafia").draggable({
+        snap: "#larry-bafia-container",
+        snapMode: "inner"
+      });
+      $("#pennefather-patrick").draggable({
+        snap: "#pennefather-patrick-container",
+        snapMode: "inner"
+      });
+      $("#festinger-jon").draggable({
+        snap: "#festinger-jon-container",
+        snapMode: "inner"
+      });
+      $("#al-sinoy").draggable({
+        snap: "#al-sinoy-container",
+        snapMode: "inner"
+      });
+      $("#jason-elliot").draggable({
+        snap: "#jason-elliot-container",
+        snapMode: "inner"
+      });
 
-    $( ".faculty-container" ).droppable({
-      drop: function( event, ui ) {
-        console.log(ui.draggable[0].id);
-        console.log($(this).data('target'));
-        if (ui.draggable[0].id === $(this).data('target')) {
-          $(this).addClass("faculty-container-correct");
-        } else {
-          $(this).addClass("faculty-container-incorrect");
-        }
-      },
-      out: function( event, ui ) {
-        $(this).removeClass( "faculty-container-correct faculty-container-highlight faculty-container-incorrect" )
-      },
-      over: function( event, ui ) {
-        $(this).addClass( "faculty-container-highlight" )
-      },
+      $(".faculty-container").droppable({
+        drop: function(event, ui) {
+          console.log(ui.draggable[0].id);
+          console.log($(this).data('target'));
+          if (ui.draggable[0].id === $(this).data('target')) {
+            $(this).addClass("faculty-container-correct");
+          } else {
+            $(this).addClass("faculty-container-incorrect");
+          }
+        },
+        out: function(event, ui) {
+          $(this).removeClass("faculty-container-correct faculty-container-highlight faculty-container-incorrect")
+        },
+        over: function(event, ui) {
+          $(this).addClass("faculty-container-highlight")
+        },
+      });
     });
-  } );
   </script>
 </head>
+
 <body>
   <table class="faculty-table">
     <tr>
@@ -106,17 +133,18 @@
 
   <table class="faculty-table">
     <tr>
-      <td><img id="jason-elliot" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/jason-elliot.png"/></td>
-      <td><img id="pennefather-patrick" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/pennefather-patrick.JPG"/></td>
-      <td><img id="smith-richard" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/smith-richard.JPG"/></td>
-      <td><img id="fracchia-dave" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/fracchia-dave.JPG"/></td>
+      <td><img id="jason-elliot" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/jason-elliot.png" /></td>
+      <td><img id="pennefather-patrick" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/pennefather-patrick.JPG" /></td>
+      <td><img id="smith-richard" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/smith-richard.JPG" /></td>
+      <td><img id="fracchia-dave" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/fracchia-dave.JPG" /></td>
     </tr>
     <tr>
-      <td><img id="al-sinoy" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/al-sinoy-2017.png"/></td>
-      <td><img id="larry-bafia" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/larry-bafia.png"/></td>
-      <td><img id="kopak-jeannette" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/kopak-jeannette.JPG"/></td>
-      <td><img id="festinger-jon" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/festinger-jon.JPG"/></td>
+      <td><img id="al-sinoy" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/al-sinoy-2017.png" /></td>
+      <td><img id="larry-bafia" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/larry-bafia.png" /></td>
+      <td><img id="kopak-jeannette" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/kopak-jeannette.JPG" /></td>
+      <td><img id="festinger-jon" src="https://thecdm.ca/files/styles/profile_image_1_4_column_220_153/public/festinger-jon.JPG" /></td>
     </tr>
   </table>
 </body>
+
 </html>
