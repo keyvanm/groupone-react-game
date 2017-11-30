@@ -14,7 +14,7 @@ class Browser extends Component {
 
   render () {
     return (
-      <Draggable>
+      <Draggable defaultPosition={{x: 0, y: -300}}>
         <div id="app_browser">
           <div id="browser_tool_bar">
             <div class="app_title">
@@ -26,17 +26,23 @@ class Browser extends Component {
               id="browser_address"
               type="text"
               placeholder="Type address here"
-              defaultValue={this.state.url}
+              value={this.state.url}
             />
-            <div class="app_bookmarks" style={{padding: "10px"}}>
-              <Badge color="primary" onClick={() => {this.setState({url: "/pics.html"})}}>Pic puzzle</Badge>
+            <h3 class="app_bookmarks" style={{padding: "10px"}}>
+              <Badge color="primary" onClick={() => {this.setState({url: "/pics.html"})}}>Pic puzzle</Badge>{ '  ' }
               <Badge
                 color="primary"
                 onClick={() => {this.setState({ url: "https://www.hangmanwords.com/play/custom-cGF0cmljaw==" })}}
               >
                 Hangman
+              </Badge>{ '  ' }
+              <Badge
+                color="primary"
+                onClick={() => {this.setState({ url: "/pr" })}}
+              >
+                Lock puzzle
               </Badge>
-            </div>
+            </h3>
           </div>
           <iframe id="browser_iframe" src={this.state.url} />
         </div>

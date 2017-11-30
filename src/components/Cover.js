@@ -29,7 +29,7 @@ class Cover extends Component {
   }
   render () {
     return (
-      <div style={{ backgroundImage: `url(${multivrsImg})`, backgroundSize: "contain", width: "100%", height: "500px" }}>
+      <div style={{ backgroundImage: `url(${multivrsImg})`, backgroundSize: "contain", width: "100%", height: "500px", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}>
         <Progress value={this.state.progress} />
       </div>
     );

@@ -6,9 +6,9 @@ class MailApp extends Component {
   constructor (props) {
     super(props);
     this.state = { items: [
-      { name: "Task 1", done: true },
-      { name: "Task 2", done: false },
-      { name: "Task 3", done: false },
+      { name: "Project Room Lock", done: true },
+      { name: "Faculty picture puzzle", done: false },
+      { name: "Hangman (clown)", done: false },
     ] };
   }
 
