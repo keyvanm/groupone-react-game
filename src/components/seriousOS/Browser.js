@@ -9,7 +9,7 @@ import iconWeb from '../assets/icon_web.png';
 class Browser extends Component {
   constructor (props) {
     super(props);
-    this.state = { url: "http://thecdm.ca" }
+    this.state = { url: "/pics.html" }
   }
 
   render () {
@@ -22,7 +22,12 @@ class Browser extends Component {
               <div class="title_app_name">Browser</div>
               <div class="button_close"></div>
             </div>
-            <input id="browser_address" type="text" placeholder="Type address here" />
+            <input
+              id="browser_address"
+              type="text"
+              placeholder="Type address here"
+              defaultValue={this.state.url}
+            />
           </div>
           <iframe id="browser_iframe" src={this.state.url} />
         </div>
