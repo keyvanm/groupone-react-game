@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ListGroup, ListGroupItem} from 'reactstrap';
 import Draggable from 'react-draggable';
 
+import './todolist.css';
+
 class MailApp extends Component {
   constructor (props) {
     super(props);
@@ -32,8 +34,9 @@ class MailApp extends Component {
 
   render () {
     return (
-      <Draggable>
-        <div style={{ position: "absolute", top: "100px", right:"100px" }}>
+      <Draggable defaultPosition={{ x: 100, y: 100 }}>
+        <div className="todo-list">
+          <div className="todo-title-bg">Todo</div>
           <ListGroup>
             { this.renderItems() }
           </ListGroup>

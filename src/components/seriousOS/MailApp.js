@@ -19,7 +19,8 @@ class MailApp extends Component {
             <p>Mail content</p>
           </Col>
         </Row> */}
-        <img alt="UI mock" style={{ width: "500px" }} src={mailAppUI} />
+        <div style={{ backgroundImage:`url(${mailAppUI})`, width: "500px", height:"378px" }}></div>
+        {/* <img alt="UI mock" style={{ width: "500px" }} src={mailAppUI} /> */}
       </Draggable>
     );
   }

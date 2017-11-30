@@ -1,0 +1,20 @@
+.todo-list{
+  float: right;
+  margin-right: 30px;
+  width: 207px;
+	min-height: 120px;
+	border-radius: 4px;
+	background-color: #f8e71c;
+	box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3);
+}
+.todo-title-bg{
+  width: 191px;
+	height: 36px;
+  padding-top: 4px;
+  padding-left: 16px;
+  font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -0.3px;
+	text-align: left;
+	color: #595313;
+}

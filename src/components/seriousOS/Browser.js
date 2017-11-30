@@ -17,10 +17,10 @@ class Browser extends Component {
       <Draggable defaultPosition={{x: 0, y: -300}}>
         <div id="app_browser">
           <div id="browser_tool_bar">
-            <div class="app_title">
-              <img alt="icon" class="title_app_icon" src={iconWeb} />
-              <div class="title_app_name">Browser</div>
-              <div class="button_close"></div>
+            <div className="app_title">
+              <img alt="icon" className="title_app_icon" src={iconWeb} />
+              <div className="title_app_name">Browser</div>
+              <div className="button_close"></div>
             </div>
             <input
               id="browser_address"
@@ -28,7 +28,7 @@ class Browser extends Component {
               placeholder="Type address here"
               value={this.state.url}
             />
-            <h3 class="app_bookmarks" style={{padding: "10px"}}>
+            <h3 className="app_bookmarks" style={{padding: "10px"}}>
               <Badge color="primary" onClick={() => {this.setState({url: "/pics.html"})}}>Pic puzzle</Badge>{ '  ' }
               <Badge
                 color="primary"
