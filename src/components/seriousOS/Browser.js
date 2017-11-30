@@ -18,7 +18,7 @@ class Browser extends Component {
         <div id="app_browser">
           <div id="browser_tool_bar">
             <div class="app_title">
-              <img class="title_app_icon" src={iconWeb} />
+              <img alt="icon" class="title_app_icon" src={iconWeb} />
               <div class="title_app_name">Browser</div>
               <div class="button_close"></div>
             </div>
@@ -44,7 +44,7 @@ class Browser extends Component {
               </Badge>
             </h3>
           </div>
-          <iframe id="browser_iframe" src={this.state.url} />
+          <iframe title="browser" id="browser_iframe" src={this.state.url} />
         </div>
       </Draggable>
     );

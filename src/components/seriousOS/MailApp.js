@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
+// import { Row, Col } from 'reactstrap';
 import Draggable from 'react-draggable';
 
 import mailAppUI from '../assets/mail_app.png';
@@ -19,7 +19,7 @@ class MailApp extends Component {
             <p>Mail content</p>
           </Col>
         </Row> */}
-        <img style={{ width: "500px" }} src={mailAppUI} />
+        <img alt="UI mock" style={{ width: "500px" }} src={mailAppUI} />
       </Draggable>
     );
   }
