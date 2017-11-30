@@ -4,8 +4,20 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import registerServiceWorker from './registerServiceWorker';
 
+import { BrowserRouter } from 'react-router-dom';
+import { Container } from 'reactstrap';
+
+
 import './index.css';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+  <BrowserRouter>
+    <Container>
+      <App />
+    </Container>
+  </BrowserRouter>
+),
+  document.getElementById('root')
+);
 registerServiceWorker();
