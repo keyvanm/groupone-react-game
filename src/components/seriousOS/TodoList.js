@@ -34,7 +34,7 @@ class MailApp extends Component {
 
   render () {
     return (
-      <Draggable defaultPosition={{ x: 100, y: 100 }}>
+      <Draggable defaultPosition={{ x: -100, y: -200 }}>
         <div className="todo-list">
           <div className="todo-title-bg">Todo</div>
           <ListGroup>
