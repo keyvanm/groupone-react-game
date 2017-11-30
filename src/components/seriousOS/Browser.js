@@ -35,12 +35,6 @@ class Browser extends Component {
                 onClick={() => {this.setState({ url: "https://www.hangmanwords.com/play/custom-cGF0cmljaw==" })}}
               >
                 Hangman
-              </Badge>{ '  ' }
-              <Badge
-                color="primary"
-                onClick={() => {this.setState({ url: "/pr" })}}
-              >
-                Lock puzzle
               </Badge>
             </h3>
           </div>
