@@ -2,21 +2,24 @@ import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import Draggable from 'react-draggable';
 
+import mailAppUI from '../assets/mail_app.png';
+
 class MailApp extends Component {
   render () {
     return (
       <Draggable>
-        <Row style={{ backgroundColor: "white", position: "absolute", top: "100px", left:"100px" }}>
+        {/* <Row style={{ backgroundColor: "white", position: "absolute", top: "100px", left:"100px" }}>
           <Col md="4">
             <ul>
-              <li>Mail 1</li>
-              <li>Mail 2</li>
+          <li>Mail 1</li>
+          <li>Mail 2</li>
             </ul>
           </Col>
           <Col md="8">
             <p>Mail content</p>
           </Col>
-        </Row>
+        </Row> */}
+        <img style={{width: "500px"}} src={mailAppUI} />
       </Draggable>
     );
   }

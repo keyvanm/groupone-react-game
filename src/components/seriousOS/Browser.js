@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
 import Draggable from 'react-draggable';
+import { Badge } from 'reactstrap';
 
 import './browser.css';
 import iconWeb from '../assets/icon_web.png';
@@ -28,6 +28,15 @@ class Browser extends Component {
               placeholder="Type address here"
               defaultValue={this.state.url}
             />
+            <div class="app_bookmarks" style={{padding: "10px"}}>
+              <Badge color="primary" onClick={() => {this.setState({url: "/pics.html"})}}>Pic puzzle</Badge>
+              <Badge
+                color="primary"
+                onClick={() => {this.setState({ url: "https://www.hangmanwords.com/play/custom-cGF0cmljaw==" })}}
+              >
+                Hangman
+              </Badge>
+            </div>
           </div>
           <iframe id="browser_iframe" src={this.state.url} />
         </div>
